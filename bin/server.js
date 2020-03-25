@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-app.use(`${apiRoot}/shortUrl`, shortUrl);
+// app.use(`${apiRoot}/shortUrl`, shortUrl);
 
 app.listen(port, () => {
     logger.INFO(`Application Started on port ${port}!`);
