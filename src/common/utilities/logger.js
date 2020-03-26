@@ -5,24 +5,24 @@ const datetimestamp = () => moment().format('YYYYMMDD');
 
 const config = {
     levels: {
-        ERROR: 0,
-        WARN: 1,
-        INFO: 2,
-        HTTP: 3,
-        VERBOSE: 4,
-        DEBUG: 5,
-        SILLY: 6,
-        CUSTOM: 7,
+        error: 0,
+        warn: 1,
+        info: 2,
+        http: 3,
+        verbose: 4,
+        debug: 5,
+        silly: 6,
+        custom: 7,
     },
     colors: {
-        ERROR: 'red',
-        WARN: 'yellow',
-        INFO: 'green',
-        HTTP: 'white',
-        VERBOSE: 'blue',
-        DEBUG: 'cyan',
-        SILLY: 'magenta',
-        CUSTOM: 'grey'
+        error: 'red',
+        warn: 'yellow',
+        info: 'green',
+        http: 'white',
+        verbose: 'blue',
+        debug: 'cyan',
+        silly: 'magenta',
+        custom: 'grey'
     }
 };
 
@@ -43,12 +43,12 @@ export const logger = winston.createLogger({
         new winston.transports.Console(),
         new winston.transports.File({
             filename: `logs/warnings/${datetimestamp()}_be-warning.log`,
-            level: 'CUSTOM'
+            level: 'custom'
         }),
         new winston.transports.File({
             filename: `logs/errors/${datetimestamp()}_be-error.log`,
-            level: 'ERROR'
+            level: 'error'
         }),
     ],
-    level: 'CUSTOM'
+    level: 'custom'
 });
