@@ -9,6 +9,7 @@
     "build": "npm run clean && npm run build-babel",
     "start": "npm run build && node ./build/bin/server.js",
     "dev": "nodemon --exec babel-node bin/server.js",
+    "debug": "node --debug ./build/bin/server.js",
     "server": "babel-node bin/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
