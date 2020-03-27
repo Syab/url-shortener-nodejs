@@ -1,0 +1,45 @@
+{
+  "name": "url-shortener-nodejs",
+  "version": "1.0.0",
+  "description": "backend for url shortener",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node bin/server.js",
+    "start": "babel-node bin/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Syab/url-shortener-nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "author": "Syab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Syab/url-shortener-nodejs/issues"
+  },
+  "homepage": "https://github.com/Syab/url-shortener-nodejs#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.6",
+    "mysql": "^2.18.1",
+    "shortid": "^2.2.15",
+    "util": "^0.12.2",
+    "winston": "^3.2.1"
+  }
+}
