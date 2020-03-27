@@ -5,7 +5,7 @@
   "main": "bin/server.js",
   "scripts": {
     "clean": "rm -rf build && mkdir build",
-    "build-babel" : "babel -d ./build ./src -s",
+    "build-babel": "babel -d ./build ./src -s",
     "build": "npm run clean && npm run build-babel",
     "start": "npm run build && node ./build/server.js",
     "dev": "nodemon --exec babel-node bin/server.js",
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Syab/url-shortener-nodejs#readme",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.0",
