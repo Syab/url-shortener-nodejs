@@ -1,4 +1,4 @@
-import 'dotenv/config';
+// import 'dotenv/config';
 
 const port = process.env.PORT;
 const mongoConnectionString = process.env.mongoCnxString;
