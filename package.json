@@ -2,15 +2,10 @@
   "name": "url-shortener-nodejs",
   "version": "1.0.0",
   "description": "backend for url shortener",
-  "main": "src/index.js",
+  "main": "bin/index.js",
   "scripts": {
-    "clean": "rm -rf build && mkdir build",
-    "build-babel": "babel -d ./build ./src -s",
-    "build": "npm run clean && npm run build-babel",
-    "start": "npm run build && node ./build/index.js",
-    "dev": "nodemon --exec babel-node src/index.js",
-    "debug": "node --debug ./build/server.js",
-    "server": "babel-node bin/server.js",
+    "start": "babel-node bin/server.js",
+    "dev": "nodemon --exec babel-node bin/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
