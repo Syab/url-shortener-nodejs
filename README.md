@@ -11,7 +11,7 @@ The full technology stack for this project includes the following :
 - Your system should have NodeJS installed (v10 and above)
 - Your system should have npm installed (v6.13.x and above)
 - You should have the database started up.
-- See   to set up DB infrastructure.
+- See https://github.com/Syab/db-setup-mariadb-python to set up DB infrastructure and table/s.
 - See https://github.com/Syab/url-shortener-nextjs to start up frontend.
 
 ### Getting Started
